@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px; /* Adjusted to a fixed width for consistent display */
+    margin: auto; /* Centered in the viewport */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns form elements centrally */
+}
+
+label {
+    font-weight: bold; /* Makes labels stand out */
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%; /* Ensures all inputs and selects are of the same width */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333; /* Darker font color for better readability */
+    background-color: #fff; /* Ensures input background is white for contrast */
+}
+
+input::placeholder, select::placeholder {
+    color: #aaa; /* Lighter color for placeholders for clarity */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 4px;
+    width: 100%; /* Match width of the form elements */
+    text-align: center; /* Center-aligns text in results div */
+}
+
+/* Accessibility Improvements */
+input:focus, select:focus, button:focus {
+    outline: 2px solid #0056b3; /* Adds focus outline for accessibility */
+}
+
+/* Loader animation placeholder */
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
